@@ -2,7 +2,7 @@
     <div class="blades-container" data-ng-controller="bladeContainer as vm">
         <div style="width: 85px;"></div>
         <div data-ng-repeat="blade in vm.blades" data-ng-class="vm.isMinimized(blade);">
-            <div class="blade-wrapper">
+            <div class="blade-wrapper" style="width: {{blade.width}}px">
                 <div>
                     <div class="blade-toolbar fill-primary">
                         <div>

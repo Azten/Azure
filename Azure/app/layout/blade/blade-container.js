@@ -9,7 +9,7 @@
         vm.closeBlade = closeBlade;
         vm.minimizeBlade = minimizeBlade;
         vm.restoreBlade = restoreBlade;
-        vm.isMinimized = isMinimized
+        vm.isMinimized = isMinimized;
         
         vm.blades = config.blades;
         
