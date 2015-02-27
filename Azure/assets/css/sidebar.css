@@ -1,0 +1,165 @@
+div.sidebar-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-height: 510px;
+    height: 100%;
+    z-index: 10;
+}
+
+div.sidebar-link-bar {
+    width: 85px;
+    height: 100%;
+    z-index: 12;
+    position: absolute;
+    text-align: center;
+}
+
+div.sidebar-expandable {
+    width: 435px;
+    height: 100%;
+    z-index: 11;
+    position: absolute;
+    transition: left 200ms;
+}
+
+div.sidebar-expandable>div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+div.sidebar-transition-panel {
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+}
+
+div.transition-panel-hidden {
+    opacity: 0;
+    left: 435px;
+}
+
+div.sidebar-expandable-visible {
+    left: 85px;box-shadow: 5px 0 0 0 rgba(108, 115, 122, .15);
+}
+
+div.sidebar-expandable-hidden {
+    left: -350px;
+}
+
+div.sidebar-button-wrapper {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+div.sidebar-button-wrapper:hover {
+    cursor: pointer;
+}
+
+div.sidebar-icon-label {
+    display: block;
+    padding: 0px 4px;
+    word-wrap: break-word;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 10px;
+    opacity: .7
+}
+
+a.sidebar-link {
+    display: block;
+    min-height: 85px;
+    width: 85px;
+    padding-top: 21px;
+}
+
+div.sidebar-icon {
+    height: 30px;
+    width: 30px;
+    margin: 0 0 5px 0;
+    display: inline-block;
+}
+
+div.sidebar-expandable:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+div.sidebar-expandable-header {
+    height: 75px;
+    padding: 33px 70px 14px 25px;
+    display: table-cell;
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+div.sidebar-transition-panel>div {
+    display: table-row;
+}
+
+div.sidebar-expandable-content {
+    display: table-cell;
+    height: 100%;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+div.sidebar-expandable-content>div {
+    padding-left: 30px;
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+}
+
+div.sidebar-expandable:hover button.sidebar-expandable-close-button {
+    opacity: .5;
+}
+
+div.sidebar-expandable button.sidebar-expandable-close-button:hover {
+    opacity: 1;
+}
+
+button.sidebar-expandable-close-button {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 36px;
+    right: 30px;
+    opacity: .3;
+    transition: all 200ms ease-out;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+svg.sidebar-close-image {
+    height: 18px;
+    width: 18px;
+}
+
+div.sidebar-icon-image {
+    height: 100%;
+    width: 100%;
+}
+
+div.sidebar-icon-image>svg {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+div.sidebar-icon-image>svg,
+div.sidebar-icon-image>svg * {
+    transition: fill 200ms;
+}

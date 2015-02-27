@@ -1,0 +1,6 @@
+<div class="metro" data-ng-controller="settingsHub as vm">
+    <h2>Themes</h2>
+    <div data-ng-repeat="theme in vm.themes">
+        <a class="tile" data-ng-class="vm.isSelected(theme);" data-ng-click="vm.setTheme(theme);" data-ng-mouseenter="vm.previewTheme(theme);" data-ng-mouseleave="vm.restoreTheme();">{{theme.title}}</a>
+    </div>
+</div>

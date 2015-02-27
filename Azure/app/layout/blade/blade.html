@@ -1,0 +1,30 @@
+<div class="metro">
+    <div class="example" data-ng-controller="blade as vm">
+        <form>
+            <fieldset>
+                <legend>Add New Blades</legend>
+                <label>Title</label>
+                <div class="input-control text">
+                    <input type="text" placeholder="Enter title" data-ng-model="vm.title">
+                    <button class="btn-clear" tabindex="-1" type="button"></button>
+                </div>
+                <label>Subtitle</label>
+                <div class="input-control text">
+                    <input type="text" placeholder="Enter title" data-ng-model="vm.subtitle">
+                    <button class="btn-clear" tabindex="-1" type="button"></button>
+                </div>
+                <label>Content Url</label>
+                <div class="input-control text">
+                    <input type="text" placeholder="Enter title" data-ng-model="vm.contentUrl">
+                    <button class="btn-clear" tabindex="-1" type="button"></button>
+                </div>
+                <label>Width</label>
+                <div class="input-control text">
+                    <input type="text" placeholder="Enter title" data-ng-model="vm.width">
+                    <button class="btn-clear" tabindex="-1" type="button"></button>
+                </div>
+                <button class="button" data-ng-click="vm.sub()">Add Blade</button>
+            </fieldset>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+.usergroup-icon>svg>g>g>*:nth-child(1),
+.usergroup-icon>svg>g>g>*:nth-child(2) {
+    fill: #CC00FF;
+}
+
+.usergroup-icon .color-target:nth-child(3),
+.usergroup-icon .color-target:nth-child(4) {
+    fill: #FFD633;
+}
+
+.usergroup-icon>svg>g>g>*:nth-child(5),
+.usergroup-icon>svg>g>g>*:nth-child(6) {
+    fill: #EF5C5C;
+}
+
+.usergroup-icon>svg>g>g>*:nth-child(7),
+.usergroup-icon>svg>g>g>*:nth-child(8) {
+    fill: #FF6600;
+}
+
+.usergroup-icon>svg>g>g>*:nth-child(9),
+.usergroup-icon>svg>g>g>*:nth-child(10) {
+    fill: #0066FF;
+}
+
+.usergroup-icon>svg>g>g>*:nth-child(11),
+.usergroup-icon>svg>g>g>*:nth-child(12) {
+    fill: #29A329;
+}
+
+.usergroup-icon>svg>g>g>*:nth-child(13) {
+    fill: #E60000;
+}
+
+.usergroup-icon>svg>g>g>*:nth-child(14) {
+    fill: #009900;
+}
+
+.home-icon {}
+
+.cloud-icon>svg {}
+
+.settings-icon {}
+
+.subway-icon {}

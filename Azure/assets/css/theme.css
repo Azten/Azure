@@ -1,0 +1,70 @@
+/* 
+----------------- black and white --------------
+*/
+
+.black-n-white .fill-primary {
+    background-color: #1c1c1c;
+}
+
+.black-n-white .fill-secondary {
+    background-color: #2a2a2b;
+}
+
+.black-n-white .hover-primary:hover {
+    background-color: #202020;
+}
+
+.black-n-white .hover-secondary:hover {
+    background-color: #202020;
+}
+
+.black-n-white .dark-scroll:hover::-webkit-scrollbar-thumb {
+    background-color: #2a2a2b;
+}
+
+.black-n-white .light-scroll:hover::-webkit-scrollbar-thumb {
+    background-color: #bababa;
+}
+
+.black-n-white .default-fill {
+    fill: #fff;
+}
+/*
+---------------- windows blue ---------------
+*/
+
+.windows-blue .fill-primary {
+    background-color: #003056;
+}
+
+.windows-blue .fill-secondary {
+    background-color: #004881;
+}
+
+.windows-blue .hover-primary:hover {
+    background-color: #202020;
+}
+
+.windows-blue .hover-secondary:hover {
+    background-color: #003661;
+}
+
+.windows-blue .dark-scroll:hover::-webkit-scrollbar-thumb {
+    background-color: #004881;
+}
+
+.windows-blue .light-scroll:hover::-webkit-scrollbar-thumb {
+    background-color: #3393df;
+}
+
+.windows-blue .default-fill {
+    fill: #fff;
+}
+/* more to come */
+
+.fill-primary,
+.fill-secondary {
+    transition: background-color 200ms ease-in;
+}
+
+*::-webkit-scrollbar {}

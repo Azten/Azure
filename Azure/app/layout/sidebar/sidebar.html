@@ -1,0 +1,39 @@
+<div class="sidebar-wrapper" data-ng-controller="sidebar as vm">
+    <div class="sidebar-link-bar fill-secondary">
+        <div style="height: 80px;"></div>
+        <div class="sidebar-button-wrapper hover-secondary" data-ng-repeat="item in vm.menuItems">
+            <a class="sidebar-link" data-ng-click="vm.onMenuItemClick(item);" data-ng-class="vm.isActive(item);">
+                <div class="sidebar-icon">
+                    <div class="sidebar-icon-image default-fill" data-ng-include="item.iconSrc" data-ng-class="vm.getColour(item);">
+                    </div>
+                </div>
+                <div class="sidebar-icon-label">
+                    {{item.title}}
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="sidebar-expandable" data-ng-class="vm.hubVisibility();" tabindex=-1>
+        <div class="fill-primary">
+            <div class="sidebar-transition-panel">
+                <div>
+                    <div class="sidebar-expandable-header">
+                        {{vm.currentMenuItem.title}}
+                    </div>
+                </div>
+                <div>
+                    <div class="sidebar-expandable-content">
+                        <div class="dark-scroll">
+                            <div data-ng-include="vm.currentMenuItem.hubTemplateUrl"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="sidebar-expandable-close-button" data-ng-click="vm.closeHub();">
+            <svg class="sidebar-close-image default-fill" viewBox="0 0 16 16" focusable="false" role="img">
+                <polygon points="14,3.3 12.7,2 8,6.7 3.3,2 2,3.3 6.7,8 2,12.7 3.3,14 8,9.3 12.7,14 14,12.7 9.3,8 "></polygon>
+            </svg>
+        </button>
+    </div>
+</div>
