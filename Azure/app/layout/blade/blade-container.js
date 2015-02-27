@@ -10,6 +10,7 @@
         vm.minimizeBlade = minimizeBlade;
         vm.restoreBlade = restoreBlade;
         vm.isMinimized = isMinimized;
+        vm.getWidth = getWidth;
         
         vm.blades = config.blades;
         
@@ -29,6 +30,11 @@
             var index = vm.blades.indexOf(blade);
             var childBlades = vm.blades.length - index;
             vm.blades.splice(index, childBlades);
-        }
+        };
+        
+        function getWidth(blade) {
+            console.log(blade)
+            return (!blade.minimized) ? blade.width : '';
+        };
     };
 })();
