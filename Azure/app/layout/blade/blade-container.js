@@ -33,7 +33,6 @@
         };
         
         function getWidth(blade) {
-            console.log(blade)
             return (!blade.minimized) ? blade.width : '';
         };
     };

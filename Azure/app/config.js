@@ -40,27 +40,27 @@
             {
                 title: 'Home',
                 iconClass: 'home-icon',
-                iconSrc: '/assets/svg/home65.svg',
+                iconSrc: 'assets/svg/home65.svg',
                 hubTemplateUrl: hubTemplatesBaseUrl + 'homeHubTemplate.html'
             }, {
                 title: 'Subway',
                 iconClass: 'subway-icon',
-                iconSrc: '/assets/svg/public11.svg',
+                iconSrc: 'assets/svg/public11.svg',
                 hubTemplateUrl: hubTemplatesBaseUrl + 'hubTemplate.html'
             }, {
                 title: 'SkyAtlas',
                 iconClass: 'cloud-icon',
-                iconSrc: '/assets/svg/mobileme.svg',
+                iconSrc: 'assets/svg/mobileme.svg',
                 hubTemplateUrl: hubTemplatesBaseUrl + 'hubTemplate.html'
             }, {
                 title: 'User Groups',
                 iconClass: 'usergroup-icon',
-                iconSrc: '/assets/svg/crowd.svg',
+                iconSrc: 'assets/svg/crowd.svg',
                 hubTemplateUrl: hubTemplatesBaseUrl + 'homeHubTemplate.html'
             }, {
                 title: 'Settings',
                 iconClass: 'settings-icon',
-                iconSrc: '/assets/svg/settings39.svg',
+                iconSrc: 'assets/svg/settings39.svg',
                 hubTemplateUrl: hubTemplatesBaseUrl + 'settingsTemplate.html'
             }
         ]
