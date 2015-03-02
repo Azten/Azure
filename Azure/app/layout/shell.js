@@ -2,9 +2,9 @@
     'use strict';
 
     var controllerId = 'shell';
-    angular.module('app').controller(controllerId, ['config', shell]);
+    angular.module('app').controller(controllerId, ['config', '$rootScope', '$route', 'bladeHandler', shell]);
 
-    function shell(config) {
+    function shell(config, $rootScope, $route, bladeHandler) {
         var vm = this;
         
         var theme;
@@ -14,5 +14,7 @@
         function getTheme(){
             return config.currentTheme.cssClass;
         }
-    };
+
+
+    }
 })();

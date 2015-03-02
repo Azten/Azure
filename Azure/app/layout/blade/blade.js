@@ -2,9 +2,9 @@
     'use strict';
 
     var controllerId = 'blade';
-    angular.module('app').controller(controllerId, ['config', blade]);
+    angular.module('app').controller(controllerId, ['bladeHandler', blade]);
 
-    function blade(config) {
+    function blade(bladeHandler) {
         var vm = this;
         
         vm.title;
@@ -13,7 +13,7 @@
         vm.width;
         
         vm.sub = function () {
-            config.blades.push({
+            bladeHandler.addBlade({
                 title: vm.title,
                 subtitle: vm.subtitle,
                 contentUrl: vm.contentUrl,

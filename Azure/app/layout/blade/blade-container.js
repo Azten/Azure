@@ -2,9 +2,9 @@
     'use strict';
 
     var controllerId = 'bladeContainer';
-    angular.module('app').controller(controllerId, ['config', bladeContainer]);
+    angular.module('app').controller(controllerId, ['bladeHandler', bladeContainer]);
 
-    function bladeContainer(config) {
+    function bladeContainer(bladeHandler) {
         var vm = this;
         vm.closeBlade = closeBlade;
         vm.minimizeBlade = minimizeBlade;
@@ -12,28 +12,26 @@
         vm.isMinimized = isMinimized;
         vm.getWidth = getWidth;
         
-        vm.blades = config.blades;
+        vm.blades = bladeHandler.blades;
         
         function minimizeBlade(blade) {
             blade.minimized = true;
-        };
+        }
         
         function restoreBlade(blade) {
             blade.minimized = false;
-        };
+        }
         
         function isMinimized(blade) {
             return (blade.minimized) ? "minimized-blade" : "";
-        };
-        
+        }
+
         function closeBlade(blade) {
-            var index = vm.blades.indexOf(blade);
-            var childBlades = vm.blades.length - index;
-            vm.blades.splice(index, childBlades);
-        };
+            bladeHandler.closeBlade(blade);
+        }
         
         function getWidth(blade) {
             return (!blade.minimized) ? blade.width : '';
-        };
-    };
+        }
+    }
 })();

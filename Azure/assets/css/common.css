@@ -38,3 +38,7 @@ button:hover {
 *::-webkit-scrollbar-thumb {
     background: transparent;
 }
+
+.main-content {
+    margin-left: 85px;
+}

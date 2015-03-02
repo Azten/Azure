@@ -41,7 +41,7 @@
                 title: 'Home',
                 iconClass: 'home-icon',
                 iconSrc: 'assets/svg/home65.svg',
-                hubTemplateUrl: hubTemplatesBaseUrl + 'homeHubTemplate.html'
+                url: "/"
             }, {
                 title: 'Subway',
                 iconClass: 'subway-icon',
@@ -70,7 +70,7 @@
         {
             title: 'Blade Tester',
             subtitle: 'Add or Remove Blades',
-            contentUrl: 'app/layout/blade/blade.html',
+            contentUrl: 'app/layout/blade/blade.html'
         }
     ];
 

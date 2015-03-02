@@ -127,12 +127,13 @@ div.minimized-blade .blade-title-wrapper {
     transform: rotate(90deg);
     transform-origin: left bottom 0;
     width: 500px;
-    padding: 0;
+    padding-bottom: 27px;
     height: 20px;
 }
 
 div.minimized-blade label.blade-title {
-    font-size: 14px;
+    text-transform: uppercase;
+    font-size: 10px;
 }
 
 div.minimized-blade label.blade-description {
@@ -140,7 +141,8 @@ div.minimized-blade label.blade-description {
 }
 
 div.minimized-blade .blade-wrapper {
-    width: 50px;
+
+    width: 40px;
 }
 
 div.blade-toolbar>div {
