@@ -1,8 +1,33 @@
-div.blade-overflow-wrapper
-{
+div.blade-overflow-wrapper {
     position: fixed;
+    display: table;
     height: 100%;
     width: 100%;
+    left: 0px;
+}
+
+div.blade-overflow-wrapper>div {
+    display: table-cell;
+}
+
+div.blade-overflow-wrapper>div:nth-child(1) {
+    width: 85px;
+}
+
+div.blade-overflow-wrapper>div:nth-child(2) {
+    width: 100%;
+}
+
+div.blade-overflow-wrapper>div:nth-child(1)>div {
+    width: 85px;
+    height: 100%;
+    box-shadow: 5px 0 0 0 rgba(108, 115, 122, .15);
+}
+
+div.blade-overflow-wrapper>div:nth-child(2)>div {
+    width: 100%;
+    height: 100%;
+    position: relative;
     overflow-x: auto;
 }
 
@@ -10,8 +35,8 @@ div.blades-container {
     left: 0px;
     position: absolute;
     height: 100%;
-    box-shadow: 5px 0 0 0 rgba(108, 115, 122, .15);
     display: inline-table;
+    box-shadow: 5px 0 0 0 rgba(108, 115, 122, .15);
 }
 
 div.blades-container>div {
@@ -30,14 +55,22 @@ div.blade-wrapper>div {
 }
 
 div.blade-wrapper>div>div {
+    opacity: 1;
+    transition: opacity 120ms linear 200ms;
     display: table-cell;
     width: 100%;
+    border-style: solid;
+    border-left-width: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+div.blade-wrapper>div>div>div {
+    position: absolute;
 }
 
 div.blade-toolbar {
     height: 25px;
-    text-align: right;
-    position: relative;
 }
 
 div.blade-header {
@@ -47,6 +80,10 @@ div.blade-header {
 div.blade-content {
     background-color: #fff;
     height: 100%;
+}
+
+div.blade-wrapper>div>div>div {
+    display: block;
 }
 
 div.blade-content>div {
@@ -59,7 +96,9 @@ div.blade-content>div {
 
 div.blade-title-wrapper>label {
     display: block;
-    word-break: break-all;
+    width: 100%;
+    word-break: keep-all;
+    cursor: default;
 }
 
 label.blade-title {
@@ -75,12 +114,15 @@ label.blade-description {
     text-transform: uppercase;
     line-height: normal;
     color: #a0a0a0;
+    opacity: 1;
+    transition: opacity 120ms linear 200ms;
 }
 
 div.blade-title-wrapper {
+    overflow: hidden;
     height: 44px;
+    width: 100%;
     padding: 0 25px;
-    position: absolute;
 }
 
 button.blade-action-button {
@@ -88,7 +130,7 @@ button.blade-action-button {
     background-color: transparent;
     padding: 5px 7px 9px;
     opacity: .5;
-    transition: opacity .2s ease-out;
+    transition: opacity 200ms ease-out;
     width: 30px;
     height: 30px;
     display: inline-block;
@@ -104,8 +146,26 @@ button.blade-action-button:hover {
     width: 16px;
 }
 
+div.blade-header>div {
+    height: 100%;
+    width: 100%;
+}
+
+div.blade-toolbar>div {
+    right: 0;
+}
+/*
+Minimized css
+*/
+
+div.minimized-blade .blade-wrapper {
+    width: 40px;
+}
+
 div.minimized-blade .blade-toolbar {
-    display: none;
+    height: 0px;
+    opacity: 0;
+    transition: none;
 }
 
 div.minimized-blade .blade-header {
@@ -113,13 +173,13 @@ div.minimized-blade .blade-header {
     cursor: pointer;
 }
 
-div.blade-header>div {
-    height: 100%;
-    width: 100%;
-    position: relative;
+div.minimized-blade .blade-content {
+    height: 0px;
+    opacity: 0;
+    transition: none;
 }
 
-div.minimized-blade .blade-content {
+div.minimized-blade .blade-content>div {
     display: none;
 }
 
@@ -129,6 +189,12 @@ div.minimized-blade .blade-title-wrapper {
     width: 500px;
     padding-bottom: 27px;
     height: 20px;
+    left: 0px;
+    top: 50px;
+}
+
+div.minimized-blade div.blade-title-wrapper>label {
+    cursor: pointer;
 }
 
 div.minimized-blade label.blade-title {
@@ -137,15 +203,6 @@ div.minimized-blade label.blade-title {
 }
 
 div.minimized-blade label.blade-description {
-    display: none;
-}
-
-div.minimized-blade .blade-wrapper {
-
-    width: 40px;
-}
-
-div.blade-toolbar>div {
-    position: absolute;
-    right: 0;
+    opacity: 0;
+    transition: none;
 }

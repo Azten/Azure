@@ -29,6 +29,18 @@
 .black-n-white .default-fill {
     fill: #fff;
 }
+
+.black-n-white .light-border {
+    border-color: #E6E6E6;
+}
+
+.black-n-white .medium-border {
+    border-color: #3F3F40;
+}
+
+.black-n-white .dark-border {
+    border-color: #333333;
+}
 /*
 ---------------- windows blue ---------------
 */
@@ -54,11 +66,23 @@
 }
 
 .windows-blue .light-scroll:hover::-webkit-scrollbar-thumb {
-    background-color: #3393df;
+    background-color: #95B5D6;
 }
 
 .windows-blue .default-fill {
     fill: #fff;
+}
+
+.windows-blue .light-border {
+    border-color: #E6E6E6;
+}
+
+.windows-blue .medium-border {
+    border-color: #195A8E;
+}
+
+.windows-blue .dark-border {
+    border-color: #194567;
 }
 /* more to come */
 
