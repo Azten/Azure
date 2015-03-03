@@ -10,6 +10,9 @@
         }, {
             title: 'Blue Balls',
             cssClass: 'windows-blue'
+        }, {
+            title: 'Thug Mode Activate',
+            cssClass: 'lucian-light'
         }
     ];
 

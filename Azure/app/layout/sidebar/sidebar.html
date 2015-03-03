@@ -7,7 +7,7 @@
                     <div class="sidebar-icon-image default-fill" data-ng-include="item.iconSrc" data-ng-class="vm.getColour(item);">
                     </div>
                 </div>
-                <div class="sidebar-icon-label">
+                <div class="sidebar-icon-label subtext">
                     {{item.title}}
                 </div>
             </a>
@@ -17,12 +17,12 @@
         <div class="fill-primary">
             <div class="sidebar-transition-panel">
                 <div>
-                    <div class="sidebar-expandable-header">
+                    <div class="sidebar-expandable-header main-text">
                         {{vm.currentMenuItem.title}}
                     </div>
                 </div>
                 <div>
-                    <div class="sidebar-expandable-content">
+                    <div class="sidebar-expandable-content main-text">
                         <div class="dark-scroll">
                             <div data-ng-include="vm.currentMenuItem.hubTemplateUrl"></div>
                         </div>

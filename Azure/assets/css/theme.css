@@ -2,6 +2,18 @@
 ----------------- black and white --------------
 */
 
+.black-n-white .main-text {
+    color: #fff;
+}
+
+.black-n-white .subtext {
+    color: #A0A0A0;
+}
+
+.black-n-white .content-text {
+    color: #000;
+}
+
 .black-n-white .fill-primary {
     background-color: #1c1c1c;
 }
@@ -10,12 +22,21 @@
     background-color: #2a2a2b;
 }
 
+.black-n-white .fill-light {
+    background-color: #fff;
+}
+
 .black-n-white .hover-primary:hover {
     background-color: #202020;
 }
 
 .black-n-white .hover-secondary:hover {
     background-color: #202020;
+}
+
+.black-n-white *:hover::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
 }
 
 .black-n-white .dark-scroll:hover::-webkit-scrollbar-thumb {
@@ -45,6 +66,18 @@
 ---------------- windows blue ---------------
 */
 
+.windows-blue .main-text {
+    color: #fff;
+}
+
+.windows-blue .subtext {
+    color: #99ADD6;
+}
+
+.windows-blue .content-text {
+    color: #000;
+}
+
 .windows-blue .fill-primary {
     background-color: #003056;
 }
@@ -53,12 +86,21 @@
     background-color: #004881;
 }
 
+.windows-blue .fill-light {
+    background-color: #fff;
+}
+
 .windows-blue .hover-primary:hover {
     background-color: #202020;
 }
 
 .windows-blue .hover-secondary:hover {
     background-color: #003661;
+}
+
+.windows-blue *:hover::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
 }
 
 .windows-blue .dark-scroll:hover::-webkit-scrollbar-thumb {
@@ -84,6 +126,71 @@
 .windows-blue .dark-border {
     border-color: #194567;
 }
+/*
+---------------- lucian light ---------------
+*/
+
+.lucian-light .main-text {
+    color: #2F2F30;
+}
+
+.lucian-light .subtext {
+    color: #75757C;
+}
+
+.lucian-light .content-text {
+    color: #2F2F30;
+}
+
+.lucian-light .fill-primary {
+    background-color: #C1C1D4;
+}
+
+.lucian-light .fill-secondary {
+    background-color: #DADAE5;
+}
+
+.lucian-light .fill-light {
+    background-color: #fff;
+}
+
+.lucian-light .hover-primary:hover {
+    background-color: #CDCDDD;
+}
+
+.lucian-light .hover-secondary:hover {
+    background-color: #CDCDDD;
+}
+
+.lucian-light *:hover::-webkit-scrollbar {
+    background-color: #EFEFF2;
+    width: 8px;
+    height: 8px;
+}
+
+.lucian-light .dark-scroll:hover::-webkit-scrollbar-thumb {
+    background-color: #E66140;
+}
+
+.lucian-light .light-scroll:hover::-webkit-scrollbar-thumb {
+    background-color: #E66140;
+}
+
+.lucian-light .default-fill {
+    fill: #555559;
+}
+
+.lucian-light .light-border {
+    border-color: #DEDEE4;
+}
+
+.lucian-light .medium-border {
+    border-color: #C4C4D0;
+}
+
+.lucian-light .dark-border {
+    border-color: #9A9AA9;
+}
 /* more to come */
 
 .fill-primary,
@@ -91,4 +198,7 @@
     transition: background-color 200ms ease-in;
 }
 
-*::-webkit-scrollbar {}
+*::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+}
