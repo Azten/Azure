@@ -69,9 +69,11 @@ div.sidebar-icon-label {
     display: block;
     padding: 0px 4px;
     word-wrap: break-word;
+    color: #fff;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 10px;
+    opacity: .7
 }
 
 a.sidebar-link {
@@ -96,6 +98,7 @@ div.sidebar-expandable-header {
     height: 75px;
     padding: 33px 70px 14px 25px;
     display: table-cell;
+    color: #fff;
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
@@ -108,6 +111,7 @@ div.sidebar-transition-panel>div {
 div.sidebar-expandable-content {
     display: table-cell;
     height: 100%;
+    color: #fff;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;

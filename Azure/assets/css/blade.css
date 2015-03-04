@@ -1,13 +1,15 @@
 div.blade-overflow-wrapper {
+    top: 0;
+    left: 0;
     position: fixed;
-    display: table;
     height: 100%;
     width: 100%;
-    left: 0px;
+    display: table;
 }
 
 div.blade-overflow-wrapper>div {
     display: table-cell;
+    height: 100%;
 }
 
 div.blade-overflow-wrapper>div:nth-child(1) {
@@ -19,15 +21,16 @@ div.blade-overflow-wrapper>div:nth-child(2) {
 }
 
 div.blade-overflow-wrapper>div:nth-child(1)>div {
-    width: 85px;
     height: 100%;
-    box-shadow: 5px 0 0 0 rgba(108, 115, 122, .15);
+    width: 85px;
 }
 
 div.blade-overflow-wrapper>div:nth-child(2)>div {
-    width: 100%;
-    height: 100%;
+    top: 0;
+    left: 0;
     position: relative;
+    height: 100%;
+    width: 100%;
     overflow-x: auto;
 }
 
@@ -35,8 +38,8 @@ div.blades-container {
     left: 0px;
     position: absolute;
     height: 100%;
-    display: inline-table;
     box-shadow: 5px 0 0 0 rgba(108, 115, 122, .15);
+    display: inline-table;
 }
 
 div.blades-container>div {
@@ -55,18 +58,19 @@ div.blade-wrapper>div {
 }
 
 div.blade-wrapper>div>div {
-    opacity: 1;
-    transition: opacity 120ms linear 200ms;
     display: table-cell;
     width: 100%;
+    opacity: 1;
+    transition: opacity 120ms linear 225ms;
     border-style: solid;
     border-left-width: 2px;
-    position: relative;
-    overflow: hidden;
 }
 
 div.blade-wrapper>div>div>div {
-    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 div.blade-toolbar {
@@ -78,26 +82,31 @@ div.blade-header {
 }
 
 div.blade-content {
-    background-color: #fff;
     height: 100%;
 }
 
-div.blade-wrapper>div>div>div {
-    display: block;
-}
-
-div.blade-content>div {
+div.blade-content-overflow-wrapper {
+    position: absolute;
+    width: 315px;
     height: 100%;
-    width: 100%;
     overflow-y: auto;
-    background-color: transparent;
+}
+
+div.blade-action-button-container {
+    position: absolute;
+    right: 0;
+}
+
+div.blade-title-wrapper {
+    height: 44px;
+    padding: 0 25px;
+    position: absolute;
+    width: 315px;
 }
 
 div.blade-title-wrapper>label {
     display: block;
-    width: 100%;
-    word-break: keep-all;
-    cursor: default;
+    word-break: break-all;
 }
 
 label.blade-title {
@@ -112,14 +121,7 @@ label.blade-description {
     text-transform: uppercase;
     line-height: normal;
     opacity: 1;
-    transition: opacity 120ms linear 200ms;
-}
-
-div.blade-title-wrapper {
-    overflow: hidden;
-    height: 44px;
-    width: 100%;
-    padding: 0 25px;
+    transition: opacity 120ms linear 225ms;
 }
 
 button.blade-action-button {
@@ -143,26 +145,14 @@ button.blade-action-button:hover {
     width: 16px;
 }
 
-div.blade-header>div {
-    height: 100%;
-    width: 100%;
-}
-
-div.blade-toolbar>div {
-    right: 0;
-}
-/*
-Minimized css
-*/
-
-div.minimized-blade .blade-wrapper {
-    width: 40px;
-}
-
 div.minimized-blade .blade-toolbar {
-    height: 0px;
+    height: 0;
     opacity: 0;
-    transition: none;
+    transition: 0;
+}
+
+div.minimized-blade .blade-toolbar>div {
+    display: none;
 }
 
 div.minimized-blade .blade-header {
@@ -171,9 +161,9 @@ div.minimized-blade .blade-header {
 }
 
 div.minimized-blade .blade-content {
-    height: 0px;
+    height: 0;
     opacity: 0;
-    transition: none;
+    transition: 0;
 }
 
 div.minimized-blade .blade-content>div {
@@ -186,12 +176,6 @@ div.minimized-blade .blade-title-wrapper {
     width: 500px;
     padding-bottom: 27px;
     height: 20px;
-    left: 0px;
-    top: 50px;
-}
-
-div.minimized-blade div.blade-title-wrapper>label {
-    cursor: pointer;
 }
 
 div.minimized-blade label.blade-title {
@@ -201,5 +185,9 @@ div.minimized-blade label.blade-title {
 
 div.minimized-blade label.blade-description {
     opacity: 0;
-    transition: none;
+    transition: 0;
+}
+
+div.minimized-blade .blade-wrapper {
+    width: 40px;
 }
